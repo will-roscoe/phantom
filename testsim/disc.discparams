@@ -1,0 +1,39 @@
+
+# gas disc parameters - this file is NOT read by setup
+                R_in =       1.000    ! inner disc boundary
+               R_ref =         10.    ! reference radius
+               R_out =        150.    ! outer disc boundary
+              H/R_in =  0.0312661776806  ! disc aspect ratio H/R at R=R_in
+             H/R_ref =      0.0556    ! disc aspect ratio H/R at R=R_ref
+             H/R_out =  0.109420226  ! disc aspect ratio H/R at R=R_out
+              sig_in =       0.000    ! surface density (g/cm^2) at R=R_in
+             sig_ref =  611.575112    ! surface density (g/cm^2) at R=R_ref
+             sig_out =  54.7589957    ! surface density (g/cm^2) at R=R_out
+             sig_max =  1325.02411    ! maximum surface density (g/cm^2)
+                Qmin =  0.200998658  ! minimum Toomre Q parameter
+                   n =       10000    ! number of particles in the disc
+             p_index =       1.000    ! power law index of surface density profile
+             q_index =       0.250    ! power law index of sound speed profile
+              M_star =       0.800    ! mass of central star
+              M_disc =       0.800    ! disc mass
+       M_disc/M_star =       1.000    ! relative disc mass
+                 cs0 =  0.0279653194761  ! sound speed at R=1
+                T_in =  200.121454    ! temperature (K) at R=R_in
+               T_ref =  63.2839602    ! temperature (K) at R=R_ref
+               T_out =  16.3398483    ! temperature (K) at R=R_out
+             inc.deg =       0.000    ! disc inclination in degrees
+               <h/H> =  0.85009932    ! approx. mean smoothing length over disc scale height
+         alphaSS_min =       0.000    ! minimum Shakura-Sunyaev alpha viscosity in disc
+         alphaSS_max =  0.0603976094653  ! maximum Shakura-Sunyaev alpha viscosity in disc
+               udist =   1.496E+13    ! distance units (cgs)
+               umass =   1.989E+33    ! mass units (cgs)
+               utime =   5.023E+06    ! time units (cgs)
+                   G =       1.000    ! in code units
+                   c =   1.007E+04    ! in code units
+
+# Temperature profile  =  63.3K (R/ 10.0)^(-0.50)
+
+# Surface density      =  8.94E+02 g/cm^2 (R/ 10.0)^(-1.0) (1 - sqrt( 1.0/R))
+
+# Disc total angular momentum =  5.29E+53 g*cm^2/sec
+
