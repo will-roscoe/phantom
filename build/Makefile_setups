@@ -3,6 +3,21 @@
 # Check for obsolete setups and replace with generic version
 #
 #----------------------------------------------------------------
+ifeq ($(SETUP), testingdisc)
+    # basic locally isothermal gas disc opts
+    SETUPFILE= setup_disc.f90
+    ANALYSIS= analysis_disc.f90
+    ISOTHERMAL=yes
+    KNOWN_SETUP=yes
+    MULTIRUNFILE= multirun.f90
+    IND_TIMESTEPS=yes
+    # self gravitating gas disc opts
+    PERIODIC = no
+    GRAVITY = yes
+    DISC_VISCOSITY=yes
+endif
+
+
 ifeq ($(SETUP), HLTau) # [buildbot skip]
     OBSOLETE_SETUP=yes
     OLDSETUP= HLTau
