@@ -29,7 +29,7 @@
                R_ref =         10.    ! reference radius
                R_out =        150.    ! outer radius
               disc_m =       0.800    ! disc mass
-             lumdisc =           0    ! Set qindex from stellar luminosity (ieos=24) (0=no 1=yes)
+             lumdisc =           1    ! Set qindex from stellar luminosity (ieos=24) (0=no 1=yes)  #1f
               pindex =       1.000    ! power law index of surface density sig=sig0*r^-p
               qindex =       0.250    ! power law index of sound speed cs=cs0*r^-q
              posangl =       0.000    ! position angle (deg)
