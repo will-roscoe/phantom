@@ -1,10 +1,10 @@
 Compilation details:
-   Date compiled: Wed Feb 11 03:16:06 PM GMT 2026
+   Date compiled: Fri Feb 27 10:44:45 PM GMT 2026
    Pre-processor flags used: -DISOTHERMAL -DIND_TIMESTEPS
  
 Version details:
-   Date this version was committed to the repository:    Tue Jan 20 16:55:38 2026 +0000
+   Date this version was committed to the repository:    Fri Feb 27 21:44:02 2026 +0000
    Commit tag:     
-   Full commit ID: 755644ac47cd3ae10a097d47940f546a3350d5ce 
+   Full commit ID: 7290dc74e8d99b76e0c10b68283b00fe7670e8c6 
    Locally modified files:
-
+testsim/phantomsetup
