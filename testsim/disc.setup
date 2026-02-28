@@ -4,7 +4,7 @@
                   np =       10000    ! number of gas particles
 
 # units
-           mass_unit =      solarm    ! mass unit (e.g. solarm,jupiterm,1e6*solarm)
+           mass_unit =    jupiterm    ! mass unit (e.g. solarm,jupiterm,1e6*solarm)
            dist_unit =          au    ! distance unit (e.g. au,pc,kpc,0.1pc)
 
 # central object(s)/potential
@@ -12,7 +12,7 @@
               nsinks =           1    ! number of sinks
 
 # options for central star
-                  m1 =       0.800    ! star mass
+                  m1 =         80.    ! star mass
                accr1 =       1.000    ! star accretion radius
 
 # oblateness
@@ -28,14 +28,15 @@
                 R_in =       1.000    ! inner radius
                R_ref =         10.    ! reference radius
                R_out =        150.    ! outer radius
-              disc_m =       0.800    ! disc mass
-             lumdisc =           1    ! Set qindex from stellar luminosity (ieos=24) (0=no 1=yes)  #1f
+              disc_m =       3.000    ! disc mass
+             lumdisc =          24    ! Set qindex from stellar luminosity (ieos=24) (0=no 1=yes)
+              L_star =       1.000    ! Stellar luminosity (Lsun)
+                T_bg =       5.000    ! background Temperature (K)
               pindex =       1.000    ! power law index of surface density sig=sig0*r^-p
-              qindex =       0.250    ! power law index of sound speed cs=cs0*r^-q
              posangl =       0.000    ! position angle (deg)
                 incl =       0.000    ! inclination (deg)
-                 H_R =      0.0556    ! H/R at R=R_ref
              alphaSS =       0.005    ! desired alphaSS (0 for minimal needed for shock capturing)
+            eos_file =  eos_lom.dat   ! Equation of state file for using lumdisc
 
 # Minimum Temperature in the Simulation
              T_floor =       0.000    ! The minimum temperature in the simulation (for any locally isothermal EOS).

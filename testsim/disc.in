@@ -1,4 +1,4 @@
-# Runtime options file for Phantom, written 12/02/2026 19:15:20.5
+# Runtime options file for Phantom, written 27/02/2026 23:29:08.5
 # Options not present assume their default values
 # This file is updated automatically after a full dump
 
@@ -7,8 +7,8 @@
             dumpfile =  disc_00201    ! dump file to start from
 
 # options controlling run time and input/output
-                tmax =   1.291E+05    ! end time
-               dtmax =  645.270436    ! time between dumps
+                tmax =   1.291E+04    ! end time
+               dtmax =  64.5270436    ! time between dumps
                 nmax =          -1    ! maximum number of timesteps (0=just get derivs and stop)
                 nout =          -1    ! write dumpfile every n dtmax (-ve=ignore)
             twallmax =      000:00    ! maximum wall time (hhh:mm, 000:00=ignore)
@@ -24,7 +24,7 @@
                 tolh =   1.000E-04    ! tolerance on h-rho iterations
 
 # shock capturing
-               alpha =  0.0588166568347  ! MINIMUM shock viscosity parameter
+               alpha =  0.0553341818867  ! MINIMUM shock viscosity parameter
             alphamax =       1.000    ! MAXIMUM shock viscosity parameter
                 beta =       2.000    ! non-linear shock viscosity parameter
       disc_viscosity =           T    ! use cs, multiply by h/|rij| and apply to approaching/receding
