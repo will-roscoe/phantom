@@ -3,11 +3,11 @@
 # Check for obsolete setups and replace with generic version
 #
 #----------------------------------------------------------------
-ifeq ($(SETUP), testingdisc)
+ifeq ($(SETUP), adibiatic_sgdisc)
     # basic locally isothermal gas disc opts
     SETUPFILE= setup_disc.f90
     ANALYSIS= analysis_disc.f90
-    ISOTHERMAL=yes
+    #ISOTHERMAL=yes
     KNOWN_SETUP=yes
     MULTIRUNFILE= multirun.f90
     IND_TIMESTEPS=yes
@@ -15,6 +15,22 @@ ifeq ($(SETUP), testingdisc)
     PERIODIC = no
     GRAVITY = yes
     DISC_VISCOSITY=yes
+endif
+
+
+
+ifeq ($(SETUP), planetary_raddisc)
+    # custom raddisc (adiabatic disc with radiation)
+    SETUPFILE= setup_disc.f90
+    ANALYSIS= analysis_disc.f90
+    KNOWN_SETUP= yes
+    DISC_VISCOSITY= yes
+    PERIODIC= no
+    GRAVITY= yes
+    RADIATION= yes
+    MULTIRUNFILE= multirun.f90
+    IND_TIMESTEPS= yes
+    SRCINJECT= evolve_planet.f90 inject_randomwind.f90
 endif
 
 #
