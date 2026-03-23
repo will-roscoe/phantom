@@ -14,12 +14,12 @@ LIBCXX = -cxxlib
 KNOWN_SYSTEM=yes
 
 # for ifort version 18+ -openmp flag is obsolete
-IFORT_VERSION_MAJOR=${shell ifort -v 2>&1 | head -1 | cut -d' ' -f 3 | cut -d'.' -f 1}
-ifeq ($(shell [ $(IFORT_VERSION_MAJOR) -lt 17 ] && echo true),true)
-    OMPFLAGS= -openmp
-else
+#IFORT_VERSION_MAJOR=${shell ifort -v 2>&1 | head -1 | cut -d' ' -f 3 | cut -d'.' -f 1}
+#ifeq ($(shell [ $(IFORT_VERSION_MAJOR) -lt 17 ] && echo true),true)
+#    OMPFLAGS= -openmp
+#else
     OMPFLAGS = -qopenmp
-endif
+#endif
 
 ifeq ($(NOWARN),yes)
    FFLAGS+= -diag-error=warn,remark,vec,par,openmp -diag-disable=13000

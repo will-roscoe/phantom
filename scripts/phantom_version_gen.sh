@@ -14,13 +14,13 @@ echo " " >> $VF
 GitDate=$(git log -n 1 | grep Date | cut -c6-)
 GitId=$(git log -n 1 --pretty=oneline | cut -c1-41)
 IsModified=$(git diff-index --name-only HEAD --)
-GitNow=$(git describe --tag)
+#GitNow=$(git describe --tag)
 test -z "$IsModified" || IsMod="true"
 
 # Write to file
 echo "Version details:" >> $VF
 echo "   Date this version was committed to the repository: $GitDate" >> $VF
-echo "   Commit tag:     $GitNow" >> $VF
+#echo "   Commit tag:     $GitNow" >> $VF
 echo "   Full commit ID: $GitId" >> $VF
 if IsMod=="true"
    then
