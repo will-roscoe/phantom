@@ -36,4 +36,5 @@ build/test000
 *.cmod
 *.ilm
 *.stb
+*.i90
 eos_lom.dat
